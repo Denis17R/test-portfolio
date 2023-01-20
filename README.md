@@ -1,3 +1,3 @@
 # text-portfolio
 CSS and HTML
-https://denis17r.github.io/text-portfolio/
+https://denis17r.github.io/test-portfolio/
