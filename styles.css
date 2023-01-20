@@ -190,8 +190,19 @@ button{
     font-family: 'Poppins'm sans-serif;
 }
 .footer > .social-medias > i:hover{
-    transform: translateY(8px);
     cursor: pointer;
+    animation: slowly 0.5s linear;
+}
+@keyframes slowly {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(4px);
+    }
+    100%{
+        transform: translateY(8px);
+    }
 }
 .footer > hr{
     margin-top: 200px;
@@ -245,9 +256,18 @@ button{
     }
 }
 @media (max-width: 725px) {
+    .about-me h1{
+        font-size: 44px;
+    }
     .projects-me{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .projects-me > h2{
+        font-size: 28px;
+    }
+    .projects-me > hr{
+        width: 100%;
     }
     .projects-me > .container > div{
         width: 100%;
@@ -257,5 +277,9 @@ button{
     }
     .projects-me > .container > div:nth-of-type(3){
         margin: 0;
+        margin-bottom: 35px;
+    }
+    .footer > h2{
+        font-size: 40px;
     }
 }
